@@ -1,0 +1,141 @@
+/*=======================================================================
+
+	❤❤❤ Gumby by Digital Surgeons. ❤❤❤
+	
+	*** This is where you should keep all of your design specific styles ***
+ 
+ ========================================================================*/
+
+body {
+	background: #eee;
+}
+
+#synth {
+	padding-top: 2%;
+	padding-bottom: 10%;
+}
+
+#fx > div {
+	text-align: center;
+	padding: 20px;
+	height: 115px;
+}
+
+#fx header h3 {
+	margin: -10px 0 8px 0;
+}
+
+header, footer {
+	text-align: center;
+}
+
+#fx, #controls {
+	margin-top: 2%;
+}
+
+#controls {
+	margin-bottom: 30px;
+}
+
+#delay_slider, #reverb_slider {
+	margin-top: 3px;
+}
+
+#delay_slider_mob, #reverb_slider_mob {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	#delay_slider_mob, #reverb_slider_mob {
+		display: block;
+		margin-top: 10px;
+	}
+
+	#delay_slider, #reverb_slider {
+		display: none;
+	}
+
+	#fx > div {
+		height: 330px;
+		margin-bottom: 40px;
+	}
+
+	#fx .three:last-child {
+		margin-top: 40px;
+	}
+}
+
+.fader, #fx > div  {
+	border: solid 1px #ccc;
+	-webkit-box-shadow: inset 0 1px 1px #fff,
+			0 1px 2px rgba(0,0,0,0.31);
+	-moz-box-shadow: inset 0 1px 1px #fff,
+			0 1px 2px rgba(0,0,0,0.31);
+	box-shadow: inset 0 1px 1px #fff,
+				0 1px 2px rgba(0,0,0,0.31);
+	background: #ccc; /* Old browsers */
+	background: -moz-linear-gradient(top, #ddd 0%, #ccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddd), color-stop(100%,#ccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ddd 0%,#ccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ddd 0%,#ccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ddd 0%,#ccc 100%); /* IE10+ */
+	background: linear-gradient(top, #ddd 0%,#ccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.fader .slider {
+	margin: 0 auto;
+	height: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.fader  {
+		margin-bottom: 20px;
+	}
+
+	.fader .slider {
+		width: 90%;
+	}
+
+	.ui-slider-vertical .ui-slider-handle {
+		width: 102.4%;
+	}
+}
+
+.fader header,
+.fader footer {
+	text-align: center;
+}
+
+.fader footer {
+	padding: 20px 0 5px;
+	font-weight: bold
+}
+
+#pad {
+	height: 344px;
+	border: solid 1px #fff;
+	-webkit-box-shadow: 0 -1px 0 #fff, -1px 0 1px #fff;
+	-moz-box-shadow: 0 -1px 0 #fff, -1px 0 0 #fff;
+	box-shadow: inset 1px -1px 5px #bbb, inset -1px 1px 5px #bbb;
+	background: #ddd; /* Old browsers */
+	background: -moz-linear-gradient(top, #ddd 0%, #ccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ddd), color-stop(100%,#ccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ddd 0%,#ccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ddd 0%,#ccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ddd 0%,#ccc 100%); /* IE10+ */
+	background: linear-gradient(top, #ddd 0%,#ccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+#pad > div {
+	height: 321px;
+	padding: 10px 20px;
+}
+
+#pad p {
+	color: #999;
+	font-size: 22px;
+}
+
